@@ -68,6 +68,35 @@ live_loop :one do
     sleep 2
     play :C4
     play :G4
+    sleep 2
+    play :B4
+    sleep 1.5
+    play :C5
+    sleep 0.5
+    play :D5
+    sleep 0.5
+    play :D5
+    sleep 0.5
+    play :G4
+    sleep 0.5
+    play :E4
+    sleep 0.5
+    play :D4
+    sleep 0.5
+    play :D4
+    sleep 0.5
+    play :G4
+    sleep 0.5
+    play :A4
+    sleep 0.5
+    play :B4
+    sleep 0.5
+    #Measure
+    play :B4
+    sleep 0.25
+    play :C5
+    sleep 0.25
+    play :B4
   end
   stop
 end
@@ -90,6 +119,7 @@ live_loop :two do
     sleep 2
     play :C4
     sleep 3
+    #4 Measure
     play :B3
     play :G3
     sleep 2
@@ -100,6 +130,16 @@ live_loop :two do
     sleep 2
     play :C4
     sleep 2
+    play :B3
+    play :F3
+    sleep 2
+    play :A3
+    sleep 2
+    play :C4
+    sleep 3
+    play :F2
+    sleep 2
+    play :G3
   end
   stop
 end
