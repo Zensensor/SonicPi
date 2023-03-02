@@ -1,4 +1,4 @@
-#Danny - Minecraft
+#Minecraft
 use_bpm 80
 use_synth :hollow
 live_loop :one do
@@ -70,11 +70,12 @@ live_loop :one do
     play :G4
     sleep 2
     play :B4
-    sleep 1.5
+    sleep 3
     play :C5
     sleep 0.5
     play :D5
     sleep 0.5
+    #Measure
     play :D5
     sleep 0.5
     play :G4
@@ -90,13 +91,78 @@ live_loop :one do
     play :A4
     sleep 0.5
     play :B4
-    sleep 0.5
     #Measure
+    sleep 0.25
     play :B4
     sleep 0.25
     play :C5
     sleep 0.25
     play :B4
+    sleep 0.25
+    play :B4
+    sleep 0.5
+    play :D5
+    sleep 0.25
+    play :B4
+    sleep 0.25
+    play :A4
+    sleep 0.5
+    play :B4
+    sleep 0.5
+    play :B4
+    play :B3
+    sleep 3
+    play :B4
+    play :G4
+    sleep 1
+    play :G4
+    sleep 1
+    play :C5
+    play :A5
+    sleep 0.5
+    play :G4
+    sleep 1
+    #Measure
+    play :G5
+    sleep 0.5
+    play :D5
+    sleep 0.5
+    play :G4
+    sleep 1
+    play :G4
+    sleep 0.5
+    play :D4
+    sleep 0.5
+    play :A4
+    sleep 0.5
+    play :B4
+    sleep 0.5
+    play :B4
+    sleep 0.5
+    play :C5
+    sleep 0.25
+    play :B4
+    sleep 0.5
+    play :D5
+    sleep 0.25
+    play :B4
+    sleep 0.5
+    play :D5
+    sleep 0.5
+    play :E5
+    sleep 0.25
+    play :G5
+    sleep 0.25
+    play :B4
+    sleep 0.25
+    play :A4
+    sleep 0.5
+    play :B4
+    sleep 1
+    play :B4
+    play :B3
+    sleep 3
+    
   end
   stop
 end
@@ -119,7 +185,7 @@ live_loop :two do
     sleep 2
     play :C4
     sleep 3
-    #4 Measure
+    #Measure
     play :B3
     play :G3
     sleep 2
@@ -130,16 +196,27 @@ live_loop :two do
     sleep 2
     play :C4
     sleep 2
+    #Measure
     play :B3
-    play :F3
-    sleep 2
-    play :A3
-    sleep 2
-    play :C4
     sleep 3
-    play :F2
+    play :A2
     sleep 2
     play :G3
+    sleep 2
+    play :A4
+    sleep 2
+    play :G2
+    sleep 2
+    play :F2
+    sleep 3
+    play :G2
+    play :G3
+    sleep 1
+    play :A3
+    sleep 1
+    play :B3
+    play :A2
+    sleep 1
   end
   stop
 end
