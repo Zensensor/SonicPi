@@ -1,10 +1,18 @@
-#Variable to store the number
-num = 1
-puts(num)
-sleep 0.5
-9.times do
-  num = num + 1 #Make num bigger
-  puts(num)
-  sleep 0.5
+
+
+use_synth :piano
+x=0.1
+a= 21
+d=108
+play a
+
+87.times do
+  a=a+1
+  play(a)
+  sleep x
 end
-puts ("HAPPY NEW YEAR!")
+87.times do
+  d=d-1
+  play (d)
+  sleep x
+end
