@@ -1,5 +1,4 @@
-
-
+#Use Variables to Store Numbers
 use_synth :piano
 x=0.1
 a= 21
