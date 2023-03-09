@@ -8,3 +8,17 @@ sleep 0.5
   sleep 0.5
 end
 puts ("HAPPY NEW YEAR!")
+
+
+#you start counting down from 7
+n = 7
+
+7.times do
+  puts(n)
+  sleep(1)
+  #without this line it would print 7 four times
+  n = n - 1
+end
+
+
+puts("HAPPY NEW YEAR!")
