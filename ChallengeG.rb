@@ -17,8 +17,7 @@ live_loop :main_theme do
   end
 end
 
-#Seven Nation Army Code 
-# Seven Nation Army by The White Stripes
+#Seven Nation Army 
 use_bpm 120
 use_synth :fm
 use_synth_defaults sustain: 0.25
