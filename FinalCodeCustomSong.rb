@@ -3,6 +3,7 @@ mc1 = "C:/Users/david_garcia/Downloads/VillagerForCsSample.wav"
 use_bpm 80
 use_synth :hollow
 x= 2
+#Array
 mC= ["A Minecraft Song", "By Me", "Hope You Enjoy"]
 i = 0
 3.times do
@@ -17,28 +18,29 @@ end
 
 live_loop :one do
   1.times do
+    #Fade
     sleep 15
-    play :G4, amp:x
+    play :G4, amp:0.5
     sleep 1
-    play :A4, amp:x
+    play :A4, amp:0.75
     sleep 1
-    play :B4, amp:x
+    play :B4, amp:0.9
     sleep 1
-    play :C5, amp:x
+    play :C5, amp:1
     sleep 1
-    play :G4, amp:x
+    play :G4, amp:1.5
     sleep 1
-    play :A4, amp:x
+    play :A4, amp:1.8
     sleep 1
-    play :B4, amp:x
+    play :B4, amp:1.9
     sleep 1
-    play :D5, amp:x
+    play :D5, amp:2
     sleep 1
-    play :C5, amp:x
+    play :C5, amp:2.5
     sleep 1
-    play :B4, amp:x
+    play :B4, amp:2.8
     sleep 1
-    play :C5, amp:x
+    play :C5, amp:2.9
     sleep 1
     play :D5, amp:x
     sleep 1
@@ -234,7 +236,7 @@ live_loop :three do
     sleep 0.5
     play :B4, amp:x
     sleep 4
-    #Ending
+    #Ending/Fade
     play :G4, amp:2
     sleep 1
     play :A4, amp:1.75
@@ -259,7 +261,7 @@ live_loop :three do
     sleep 1
     play :D5, amp:0.1
     sleep 1
-    play :G4, amp:0.05
+    play :G4, amp:0.75
     sleep 3
     
   end
@@ -302,3 +304,4 @@ live_loop :four do
   end
   stop
 end
+
