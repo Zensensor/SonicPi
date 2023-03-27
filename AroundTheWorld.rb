@@ -18,7 +18,9 @@ live_loop :elec do
   sleep 2
 end
 
-play :
+beats = [:e3,:e3,:g3,:e3,:r,:d3,:c3,:b2]
+sleeps = [0.5,0.5,0.5,0.5]
+x = 0
 
 
 
