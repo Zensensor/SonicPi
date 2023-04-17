@@ -1,5 +1,5 @@
 use_bpm 124
-mal = "C:/Users/Admin/Downloads/luigi-_luigi_thought_that_ (1).wav"
+mal = "C:/Users/david_garcia/Downloads/luigi-_luigi_thought_that_ (1).wav"
 
 dpv = "C:/Users/david_garcia/Downloads/484a1940-ccc6-11ed-85ae-3d538cc6b2be.wav"
 
@@ -9,8 +9,9 @@ sleeps = [0.5,0.5,0.5,1,1,0.25,0.25]
 y = 0
 
 with_fx :bpf do
-  sample mal, amp:8
+  sample mal, amp:4
 end
+
 
 
 define :baseline1 do
@@ -39,6 +40,13 @@ define :baseline3 do
   end
 end
 
+define :synthesizer3 do
+  with_fx :ixi_techno, mix: 1, phase: 2 do
+    play_pattern_timed [:e3, :g3, :b2, :d3, :d3], [0.5, 1, 0.5, 1.75, 0.25],
+      attack: 0.0, sustain: 0.05, release: 0.1, width: 0, amp: 0.7
+  end
+end
+
 define :daftsynth1 do
   with_fx :flanger do
     16.times do
@@ -55,10 +63,13 @@ define :daftsynth1 do
   end
 end
 
-
-
-
-
+use_synth :chiplead
+live_loop :wah, delay: 32 do
+  80.times do
+    synthesizer3
+  end
+  stop
+end
 
 live_loop :synth do
   use_synth :dtri
@@ -66,7 +77,6 @@ live_loop :synth do
   16.times do
     daftsynth1
   end
-  
   stop
 end
 
@@ -78,11 +88,11 @@ live_loop :bass do
     baseline1
   end
   
-  10.times do
+  8.times do
     baseline2
   end
   
-  16.times do
+  7.times do
     baseline3
   end
   
