@@ -1,5 +1,5 @@
 use_bpm 124
-mal = "C:/Users/david_garcia/Downloads/luigi-_luigi_thought_that_ (1).wav"
+mal = "C:/Users/Admin/Downloads/luigi-_luigi_thought_that_ (1).wav"
 
 dpv = "C:/Users/david_garcia/Downloads/484a1940-ccc6-11ed-85ae-3d538cc6b2be.wav"
 
@@ -9,9 +9,8 @@ sleeps = [0.5,0.5,0.5,1,1,0.25,0.25]
 y = 0
 
 with_fx :bpf do
-  sample mal, amp:4
+  sample mal, amp:8
 end
-
 
 
 define :baseline1 do
@@ -47,9 +46,10 @@ define :synthesizer3 do
   end
 end
 
+
 define :daftsynth1 do
   with_fx :flanger do
-    16.times do
+    13.times do
       7.times do
         play beats[x]
         sleep sleeps[y]
@@ -63,6 +63,8 @@ define :daftsynth1 do
   end
 end
 
+
+
 use_synth :chiplead
 live_loop :wah, delay: 32 do
   80.times do
@@ -71,12 +73,14 @@ live_loop :wah, delay: 32 do
   stop
 end
 
+
 live_loop :synth do
   use_synth :dtri
   sleep 27
-  16.times do
+  13.times do
     daftsynth1
   end
+  
   stop
 end
 
@@ -84,22 +88,22 @@ end
 live_loop :bass do
   use_synth :winwood_lead
   sleep 27
-  16.times do
+  13.times do
     baseline1
   end
   
-  8.times do
+  5.times do
     baseline2
   end
   
-  7.times do
+  10.times do
     baseline3
   end
   
   stop
 end
 sleep 27
-17.times do
+13.times do
   sample :drum_heavy_kick
   sleep 1
 end
